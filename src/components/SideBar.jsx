@@ -1,13 +1,12 @@
-import {Stack , Box, Switch,Divider, Avatar, IconButton} from '@mui/material';
+import {Stack , Box, Switch, Divider, Avatar, IconButton} from '@mui/material';
 import Logo from '../assets/images/logo.png';
 import LogoDark from '../assets/images/logo-dark.png';
 import Ava from '../assets/images/test_avatar.jpg';
-import { NavBarIcons , SettingsIcon} from '../data/icons';
+import { NavBarIcons , SettingsIcon, themeIcons} from '../data/icons';
 import { NavIcon } from './NavIcon';
 import "./SideBar.css";
 import { useState } from 'react';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import NightlightOutlinedIcon from '@mui/icons-material/NightlightOutlined';
+
 
 
 export const SideBar = ({onThemeToggle , isDarkMode}) => {
@@ -33,8 +32,8 @@ export const SideBar = ({onThemeToggle , isDarkMode}) => {
       </Stack>
       
       <Stack className="side-bar-bottom-section" spacing={3}>        
-        <IconButton  onClick={onThemeToggle} color="inherit">
-          {isDarkMode? <LightModeIcon/> : <NightlightOutlinedIcon/>}
+        <IconButton  onClick={onThemeToggle} color="inherit" >
+          {isDarkMode? themeIcons[0] : themeIcons[1]}
         </IconButton>
         <Avatar className='avatar-container' src={Ava}/>
       </Stack>
