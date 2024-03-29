@@ -1,21 +1,23 @@
 import { Avatar, Box, Stack, Typography } from "@mui/material";
-import Ava from '../assets/images/test_avatar.jpg';
 import "./ChatRoom.css"
 import {faker} from "@faker-js/faker";
+import { useTheme } from "@emotion/react";
 
 const ChatRoom = () => {
+    const theme = useTheme()
   return (
-    <Stack className="chat-room-container">
+    <Stack className="chat-room-container" sx={{backgroundColor : theme.palette.background.paper , color: theme.palette.text.primary}}>
         <Stack direction="row">
             <Avatar className='avatar-container' src={faker.image.avatar()}/>
             <Stack direction="row" justifyContent="space-between" alignItems="start"  sx={{ width:"100%", marginLeft:"8px"}}>
                 <Stack>
-                    <Typography variant="caption">{faker.person.firstName()}</Typography>
-                    <Typography variant="caption">{faker.color.human()}</Typography>
+                    <Box className = "room-title">{faker.person.firstName()}</Box>
+                    <Box className = "room-sub-title">{faker.person.bio()}</Box>
                 </Stack>
-                <Box>
-                    <Typography variant="caption">9:35</Typography>
-                </Box>
+                <Stack>
+                    <Box className = "room-date">9:35</Box>
+                    <Box className = "unread-msg">2</Box>
+                </Stack>
             </Stack>            
         </Stack>
             

@@ -1,8 +1,41 @@
 .chat-room-container{
-    background-color: #5B96F7;
     color:white;
     border-radius: 15px;
     padding:16px;
     margin:8px 5px;
+}
+
+.room-title{
+    font-size: 16px;
+    font-weight:800;
+    line-height: 25px;
+}
+
+.room-sub-title{
+    font-size: 14px;
+    font-weight:600;
+    line-height: 19.12px;
+    color:#7C7C7D;
+}
+
+.room-date{
+    font-size: 12px;
+    font-weight:500;
+    line-height: 25px;
+    color:#686768;
+}
+
+.unread-msg{
+    font-size: 10px;
+    font-weight:700;
+    line-height: 19.12px;
+    color:white;
+    background-color: #5B96F7;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -10,7 +10,7 @@ export const ChatsList = () => {
   const theme = useTheme()
   
   return (
-    <Stack className="chats-container" direction="column" p={3}>
+    <Stack className="chats-container" direction="column" p={3} sx={{backgroundColor : theme.palette.background.secondary}}>
         <Stack direction="row" justifyContent="space-between" alignItems="center" >
             <Typography variant="h5" sx={{fontWeight: 'bold'}}>Chats</Typography>
             <IconButton><PiCircleDashedLight className="circle-icon"/></IconButton>
