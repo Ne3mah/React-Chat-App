@@ -1,4 +1,3 @@
-// iconData.js
 import { IoChatbubbleEllipsesOutline } from 'react-icons/io5';
 import { PiUsers, PiGear } from 'react-icons/pi';
 import { FiPhone } from 'react-icons/fi';

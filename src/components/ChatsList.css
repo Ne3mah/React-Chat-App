@@ -1,0 +1,19 @@
+.chats-container{
+    width:320px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 2px;
+    height:100vh;
+}
+
+.circle-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.archived-section{
+    cursor: pointer;
+    margin:12px 0px;
+}
+
+.chat-list-container{
+    overflow-y: scroll;
+}
