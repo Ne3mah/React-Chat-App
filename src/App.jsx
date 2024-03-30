@@ -2,8 +2,9 @@ import { useState } from 'react';
 import {  Stack, ThemeProvider } from '@mui/material';
 import lightTheme from './theme/lightTheme';
 import darkTheme from './theme/darkTheme';
-import { SideBar } from './layout/SideBar';
-import { ChatsList } from './pages/ChatsList';
+import { SideBar } from './components/SideBar/SideBar';
+import { ChatsList } from './pages/Chats/ChatsList';
+import ConversationPage from './pages/Conversations/ConversationPage';
 
 function App() { 
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <Stack direction="row" style={style}>
         <SideBar onThemeToggle={toggleDarkMode} isDarkMode = {isDarkMode}/>
         <ChatsList/>
+        <ConversationPage/>
       </Stack>      
     </ThemeProvider>
        

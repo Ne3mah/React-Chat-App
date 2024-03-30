@@ -1,10 +1,10 @@
-import { Box, Divider, IconButton, Stack, Typography } from "@mui/material"
+import { Box, Divider, IconButton, Stack} from "@mui/material"
 import { PiCircleDashedLight } from "react-icons/pi";
 import { RiInboxArchiveLine } from "react-icons/ri";
 import "./ChatsList.css"
 import { useTheme } from "@emotion/react"
-import { SearchConversation } from "../components/SearchConversation";
-import ChatRoom from "../components/ChatRoom";
+import ChatRoom from "./components/ChatRoom";
+import ChatSearch from "./components/ChatSearch";
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
 export const ChatsList = () => {
@@ -17,9 +17,7 @@ export const ChatsList = () => {
             <IconButton><PiCircleDashedLight className="circle-icon"/></IconButton>
         </Stack>
 
-        <Box>
-          <SearchConversation></SearchConversation>
-        </Box>
+        <ChatSearch/>
 
         <Stack direction="row" alignItems="center" className="archived-section">
           <RiInboxArchiveLine className = "archived-icon"/>

@@ -24,7 +24,26 @@
     border-radius: 12px;
 }
 
-.nav-divider{
+.sidebar-icon-box{
+    width:40px;
+    height:40px; 
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.sidebar-icon-box:hover{
+    cursor: pointer;
+}
+
+.sidebar-icon-box.active{
+    background-color: #5B96F7;
+    color:white;
+}
+
+.sidebar-divider{
     width:50px;
     border:1px solid #B4B4B4;
 }

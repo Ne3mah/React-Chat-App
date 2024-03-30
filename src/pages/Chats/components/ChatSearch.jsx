@@ -1,9 +1,9 @@
 import {InputBase, IconButton, Box} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useTheme } from '@emotion/react';
-import "./SearchConversation.css"
+import "./ChatSearch.css"
 
-export const SearchConversation = () => {
+ const ChatSearch = () => {
   const theme = useTheme()
   return (
     <Box className="search-container"  sx={{backgroundColor: theme.palette.background.paper}}>
@@ -17,3 +17,5 @@ export const SearchConversation = () => {
     </Box>
   );
 }
+
+export default ChatSearch

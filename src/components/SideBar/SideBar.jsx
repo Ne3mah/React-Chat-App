@@ -1,9 +1,9 @@
 import {Stack , Box, Divider, Avatar, IconButton} from '@mui/material';
-import Logo from '../assets/images/logo.png';
-import LogoDark from '../assets/images/logo-dark.png';
-import Ava from '../assets/images/test_avatar.jpg';
-import { NavBarIcons , SettingsIcon, themeIcons} from '../data/icons';
-import { NavIcon } from '../components/NavIcon';
+import Logo from '../../assets/images/logo.png';
+import LogoDark from '../../assets/images/logo-dark.png';
+import Ava from '../../assets/images/test_avatar.jpg';
+import { SideBarIcons , SettingsIcon, themeIcons} from '../../data/icons';
+import { SideIcon } from './SideIcon';
 import "./SideBar.css";
 import { useState } from 'react';
 
@@ -16,8 +16,8 @@ export const SideBar = ({onThemeToggle , isDarkMode}) => {
       setActiveIcon(index)
     }
 
-    const NavBarIconsList = NavBarIcons.map((icon, index)=>{
-        return <NavIcon key={index} isActive ={activeIcon == index && true} onClickNavIcon={()=> HandleClickIcon(index)}>{icon}</NavIcon>
+    const SideBarIconsList = SideBarIcons.map((icon, index)=>{
+        return <SideIcon key={index} isActive ={activeIcon == index && true} onClickNavIcon={()=> HandleClickIcon(index)}>{icon}</SideIcon>
     })
 
   return (
@@ -27,9 +27,9 @@ export const SideBar = ({onThemeToggle , isDarkMode}) => {
             <img src={isDarkMode? LogoDark : Logo} className="img-logo"/>
         </Box>
         <Stack spacing={2} alignItems= "center">
-          {NavBarIconsList}
-          <Divider className="nav-divider" orientation="horizontal" variant="middle"/>
-          <NavIcon isActive ={activeIcon == 3 && true} onClickNavIcon={()=> HandleClickIcon(3)}>{SettingsIcon}</NavIcon>
+          {SideBarIconsList}
+          <Divider className="sidebar-divider" orientation="horizontal" variant="middle"/>
+          <SideIcon isActive ={activeIcon == 3 && true} onClickNavIcon={()=> HandleClickIcon(3)}>{SettingsIcon}</SideIcon>
         </Stack>
         
       </Stack>
