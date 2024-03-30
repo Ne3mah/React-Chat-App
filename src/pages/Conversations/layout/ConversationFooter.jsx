@@ -1,7 +1,9 @@
+import { useTheme } from "@emotion/react"
 
 const ConversationFooter = () => {
+  const theme = useTheme()
   return (
-    <div>ConversationFooter</div>
+    <div className="conversation-footer" style={{backgroundColor :theme.palette.background.secondary}}></div>
   )
 }
 

@@ -1,5 +1,4 @@
 import { Box, Divider, IconButton, Stack} from "@mui/material"
-import { PiCircleDashedLight } from "react-icons/pi";
 import { RiInboxArchiveLine } from "react-icons/ri";
 import "./ChatsList.css"
 import { useTheme } from "@emotion/react"
@@ -11,12 +10,9 @@ export const ChatsList = () => {
   const theme = useTheme()
   
   return (
-    <Stack className="chats-container" direction="column" p={3} sx={{backgroundColor : theme.palette.background.secondary}}>
-        <Stack direction="row" justifyContent="space-between" alignItems="center" >
-            <Box className ="chat-list-title" sx={{fontWeight: 'bold'}}>Chats</Box>
-            <IconButton><PiCircleDashedLight className="circle-icon"/></IconButton>
-        </Stack>
-
+    <Stack className="chats-container" direction="column" p={3} sx={{backgroundColor : theme.palette.background.secondary}}>        
+        <Box className ="chat-list-title" sx={{fontWeight: 'bold'}}>Chats</Box>
+        
         <ChatSearch/>
 
         <Stack direction="row" alignItems="center" className="archived-section">
