@@ -4,6 +4,11 @@
     height:100vh;
 }
 
+.chat-list-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .circle-icon{
     width: 24px;
     height: 24px;
@@ -14,8 +19,15 @@
     margin:12px 0px;
 }
 
+.archived-icon{
+    width: 22px;
+    height: 24px;
+    color: #676667;
+}
+
 .archived-title{
-    color: #709CE6;
+    color: #5B96F7;
+    font-size: 14px;
     margin-left: 12px;
     font-weight: 700;
 }

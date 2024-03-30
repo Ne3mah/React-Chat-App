@@ -13,7 +13,7 @@ export const ChatsList = () => {
   return (
     <Stack className="chats-container" direction="column" p={3} sx={{backgroundColor : theme.palette.background.secondary}}>
         <Stack direction="row" justifyContent="space-between" alignItems="center" >
-            <Typography variant="h5" sx={{fontWeight: 'bold'}}>Chats</Typography>
+            <Box className ="chat-list-title" sx={{fontWeight: 'bold'}}>Chats</Box>
             <IconButton><PiCircleDashedLight className="circle-icon"/></IconButton>
         </Stack>
 
@@ -22,7 +22,7 @@ export const ChatsList = () => {
         </Box>
 
         <Stack direction="row" alignItems="center" className="archived-section">
-          <RiInboxArchiveLine width="22px" height="24px"/>
+          <RiInboxArchiveLine className = "archived-icon"/>
           <Box className ="archived-title">Archived</Box>        
         </Stack>
 
