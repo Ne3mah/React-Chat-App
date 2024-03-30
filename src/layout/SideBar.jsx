@@ -3,7 +3,7 @@ import Logo from '../assets/images/logo.png';
 import LogoDark from '../assets/images/logo-dark.png';
 import Ava from '../assets/images/test_avatar.jpg';
 import { NavBarIcons , SettingsIcon, themeIcons} from '../data/icons';
-import { NavIcon } from './NavIcon';
+import { NavIcon } from '../components/NavIcon';
 import "./SideBar.css";
 import { useState } from 'react';
 

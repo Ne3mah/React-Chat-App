@@ -3,8 +3,8 @@ import { PiCircleDashedLight } from "react-icons/pi";
 import { RiInboxArchiveLine } from "react-icons/ri";
 import "./ChatsList.css"
 import { useTheme } from "@emotion/react"
-import { SearchConversation } from "./SearchConversation";
-import ChatRoom from "./ChatRoom";
+import { SearchConversation } from "../components/SearchConversation";
+import ChatRoom from "../components/ChatRoom";
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
 export const ChatsList = () => {

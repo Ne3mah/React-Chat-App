@@ -1,9 +1,9 @@
-import { SideBar } from './components/SideBar';
 import { useState } from 'react';
 import {  Stack, ThemeProvider } from '@mui/material';
 import lightTheme from './theme/lightTheme';
 import darkTheme from './theme/darkTheme';
-import { ChatsList } from './components/ChatsList';
+import { SideBar } from './layout/SideBar';
+import { ChatsList } from './pages/ChatsList';
 
 function App() { 
   const [isDarkMode, setIsDarkMode] = useState(false);
