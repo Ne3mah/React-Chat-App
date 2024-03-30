@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import "./NavIcon.css"
-import { Children } from "react";
 
 export const NavIcon = ({children, onClickNavIcon, isActive}) => {
 

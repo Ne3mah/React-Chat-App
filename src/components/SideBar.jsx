@@ -1,4 +1,4 @@
-import {Stack , Box, Switch, Divider, Avatar, IconButton} from '@mui/material';
+import {Stack , Box, Divider, Avatar, IconButton} from '@mui/material';
 import Logo from '../assets/images/logo.png';
 import LogoDark from '../assets/images/logo-dark.png';
 import Ava from '../assets/images/test_avatar.jpg';
@@ -22,13 +22,16 @@ export const SideBar = ({onThemeToggle , isDarkMode}) => {
 
   return (
     <Stack className="side-bar-container">
-      <Stack className="side-bar-top-section" spacing={2}>
+      <Stack className="side-bar-top-section">
         <Box className="logo-container">
             <img src={isDarkMode? LogoDark : Logo} className="img-logo"/>
         </Box>
-        {NavBarIconsList}
-        <Divider className="nav-divider" orientation="horizontal" variant="middle"/>
-        <NavIcon isActive ={activeIcon == 3 && true} onClickNavIcon={()=> HandleClickIcon(3)}>{SettingsIcon}</NavIcon>
+        <Stack spacing={2} alignItems= "center">
+          {NavBarIconsList}
+          <Divider className="nav-divider" orientation="horizontal" variant="middle"/>
+          <NavIcon isActive ={activeIcon == 3 && true} onClickNavIcon={()=> HandleClickIcon(3)}>{SettingsIcon}</NavIcon>
+        </Stack>
+        
       </Stack>
       
       <Stack className="side-bar-bottom-section" spacing={3}>        

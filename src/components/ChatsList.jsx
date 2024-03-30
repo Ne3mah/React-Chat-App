@@ -29,7 +29,7 @@ export const ChatsList = () => {
         <Divider orientation="horizontal"/>
 
         <Stack className="chat-list-container"> 
-            <Scrollbars autoHide style = {{ width: "280px" , height:"500px" , margin:"12px 0px"}}>         
+            <Scrollbars autoHide style = {{ width: "280px" , height:"75vh" , margin:"12px 0px"}}>         
               <Box className ="chat-list-subtitle">Pinned</Box>            
               <ChatRoom></ChatRoom> 
               <ChatRoom></ChatRoom> 
