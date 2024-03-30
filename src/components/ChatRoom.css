@@ -1,8 +1,11 @@
 .chat-room-container{
-    color:white;
     border-radius: 15px;
     padding:16px;
-    margin:8px 5px;
+    margin:8px 15px 8px 0px;
+}
+
+.chat-room-container:hover{
+    cursor: pointer;
 }
 
 .room-title{

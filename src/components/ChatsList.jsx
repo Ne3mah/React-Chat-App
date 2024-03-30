@@ -5,6 +5,7 @@ import "./ChatsList.css"
 import { useTheme } from "@emotion/react"
 import { SearchConversation } from "./SearchConversation";
 import ChatRoom from "./ChatRoom";
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 export const ChatsList = () => {
   const theme = useTheme()
@@ -22,22 +23,23 @@ export const ChatsList = () => {
 
         <Stack direction="row" alignItems="center" className="archived-section">
           <RiInboxArchiveLine width="22px" height="24px"/>
-          <Typography variant="caption" ml={1} sx={{color: "#709CE6", fontWeight:"bold"}}>Archived</Typography>        
+          <Box className ="archived-title">Archived</Box>        
         </Stack>
 
         <Divider orientation="horizontal"/>
 
-        <Stack className="chat-list-container">
-          <Typography variant="caption" sx={{color: "#676667", fontWeight: 700 , fontSize: "16px", lineHeight: "21.86px", margin:"12px 0px"}}>Pinned</Typography>
-          <ChatRoom></ChatRoom>
-          <ChatRoom></ChatRoom> 
-          <ChatRoom></ChatRoom> 
-          <ChatRoom></ChatRoom> 
-          <ChatRoom></ChatRoom>  
-          <Typography variant="caption" sx={{color: "#676667", fontWeight: 700 , fontSize: "16px", lineHeight: "21.86px" , margin:"12px 0px"}}>All Chats</Typography>
-          <ChatRoom></ChatRoom> 
-          <ChatRoom></ChatRoom> 
-          <ChatRoom></ChatRoom>
+        <Stack className="chat-list-container"> 
+            <Scrollbars autoHide style = {{ width: "280px" , height:"500px" , margin:"12px 0px"}}>         
+              <Box className ="chat-list-subtitle">Pinned</Box>            
+              <ChatRoom></ChatRoom> 
+              <ChatRoom></ChatRoom> 
+              <ChatRoom></ChatRoom> 
+              <ChatRoom></ChatRoom>  
+              <Box className ="chat-list-subtitle">All Chats</Box>
+              <ChatRoom></ChatRoom> 
+              <ChatRoom></ChatRoom> 
+              <ChatRoom></ChatRoom>
+            </Scrollbars>
         </Stack>
 
 

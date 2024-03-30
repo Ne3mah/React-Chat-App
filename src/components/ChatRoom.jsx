@@ -14,7 +14,7 @@ const ChatRoom = () => {
                     <Box className = "room-title">{faker.person.firstName()}</Box>
                     <Box className = "room-sub-title">{faker.person.bio()}</Box>
                 </Stack>
-                <Stack>
+                <Stack alignItems="center">
                     <Box className = "room-date">9:35</Box>
                     <Box className = "unread-msg">2</Box>
                 </Stack>
