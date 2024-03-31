@@ -1,17 +1,17 @@
 import {InputBase, IconButton, Box} from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
 import { useTheme } from '@emotion/react';
 import "./ChatSearch.css"
+import { IoSearchOutline } from "react-icons/io5";
 
  const ChatSearch = () => {
   const theme = useTheme()
   return (
-    <Box className="search-container"  sx={{backgroundColor: theme.palette.background.paper}}>
+    <Box className="search-container"  sx={{backgroundColor: theme.palette.background.main}}>
       <IconButton>
-        <SearchIcon sx={{color:theme.palette.text.secondary}}/>
+        <IoSearchOutline style={{color:theme.palette.text.main}}/>
       </IconButton>
       <InputBase
-        sx={{ ml: 1 , color:theme.palette.text.secondary}}
+        sx={{ ml: 1 , color:theme.palette.text.main}}
         placeholder="Search"        
       />      
     </Box>
