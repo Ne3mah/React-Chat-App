@@ -3,8 +3,8 @@ import {  Stack, ThemeProvider } from '@mui/material';
 import lightTheme from './theme/lightTheme';
 import darkTheme from './theme/darkTheme';
 import { SideBar } from './components/SideBar/SideBar';
-import { ChatsList } from './pages/Chats/ChatsList';
-import ConversationPage from './pages/Conversations/ConversationPage';
+import { ChatsList } from './components/Chats/ChatsList';
+import ConversationPage from './components/Conversations/ConversationPage';
 
 function App() { 
   const [isDarkMode, setIsDarkMode] = useState(false);

@@ -1,8 +1,8 @@
 import { Stack } from "@mui/material";
-import "./ConversationPage.css";
-import ConversationHeader from "./layout/ConversationHeader";
-import ConversationSpace from "./layout/ConversationSpace";
-import ConversationFooter from "./layout/ConversationFooter";
+import "./index.css";
+import ConversationHeader from "./ConversationHeader";
+import ConversationSpace from "./ConversationSpace";
+import ConversationFooter from "./ConversationFooter"; 
 
 const ConversationPage = () => {
   return (

@@ -4,7 +4,7 @@ import LogoDark from '../../assets/images/logo-dark.png';
 import Ava from '../../assets/images/test_avatar.jpg';
 import { SideBarIcons , SettingsIcon, themeIcons} from '../../data/icons';
 import { SideIcon } from './SideIcon';
-import "./SideBar.css";
+import "./index.css";
 import { useState } from 'react';
 
 

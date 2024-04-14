@@ -1,9 +1,9 @@
-import { Box, Divider, IconButton, Stack} from "@mui/material"
+import { Box, Divider, Stack} from "@mui/material"
 import { RiInboxArchiveLine } from "react-icons/ri";
-import "./ChatsList.css"
+import "./index.css"
 import { useTheme } from "@emotion/react"
-import ChatRoom from "./components/ChatRoom";
-import ChatSearch from "./components/ChatSearch";
+import ChatRoom from "./ChatRoom";
+import ChatSearch from "./ChatSearch";
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
 export const ChatsList = () => {

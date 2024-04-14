@@ -1,6 +1,5 @@
 import {InputBase, IconButton, Box} from '@mui/material';
 import { useTheme } from '@emotion/react';
-import "./ChatSearch.css"
 import { IoSearchOutline } from "react-icons/io5";
 
  const ChatSearch = () => {

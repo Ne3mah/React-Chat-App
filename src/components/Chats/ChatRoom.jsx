@@ -1,5 +1,4 @@
 import { Avatar, Box, Stack, Typography } from "@mui/material";
-import "./ChatRoom.css"
 import {faker} from "@faker-js/faker";
 import { useTheme } from "@emotion/react";
 
